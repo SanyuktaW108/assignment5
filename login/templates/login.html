@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post" action="/authenticateadmin/">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="username">
+    <br>
+    <input type="text" name="password" placeholder="password">
+
+    <br>
+    <input type="submit" value="Login">
+    <br>
+    <a href="/registration/newrecord">Registration</a>
+    </form>
+
+    <br>
+</body>
+</html>
